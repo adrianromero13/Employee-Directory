@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 // import { Route } from 'react-router-dom';
 import { Grid, Header } from 'semantic-ui-react';
 
+import Navbar from './../../components/Navbar';
+
 
 class App extends Component {
   render() {
     return (
-      <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-        <Header>
-            Hello
-        </Header>
-      </Grid>
+      // <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+        <Navbar/>
+      // </Grid>
     );
   }
 }
