@@ -1,14 +1,16 @@
 //turning into class based component
 import React, { Component } from 'react';
 // import { Route } from 'react-router-dom';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Header } from 'semantic-ui-react';
 
 
 class App extends Component {
   render() {
     return (
       <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-        
+        <Header>
+            Hello
+        </Header>
       </Grid>
     );
   }
