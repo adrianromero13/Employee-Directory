@@ -2,9 +2,9 @@ import React from "react";
 
 // import Main from "./components/Main";
 // import Wrapper from "./components/Wrapper";
-import Header from './../Header';
+import Header from '../Header';
 
-import './../../assets/App';
+import '../../assets/App';
 
 function App() {
   return (
