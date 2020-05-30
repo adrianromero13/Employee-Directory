@@ -1,18 +1,18 @@
 import React from "react";
 
-import Main from "./components/Main";
-import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+// import Main from "./components/Main";
+// import Wrapper from "./components/Wrapper";
+import Header from './../Header';
 
-import "./../../assets/App.css";
+import './../../assets/App';
 
 function App() {
   return (
     <div className="App">
-      <Wrapper>
+      {/* <Wrapper> */}
         <Header />
-        <Main />
-      </Wrapper>
+        {/* <Main /> */}
+      {/* </Wrapper> */}
     </div>
   );
 }
