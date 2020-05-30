@@ -4,12 +4,13 @@ import React from "react";
 // import Wrapper from "./components/Wrapper";
 import Header from '../Header';
 
-import '../../assets/App';
+import '../../assets/App.css';
 
 function App() {
   return (
     <div className="App">
       {/* <Wrapper> */}
+      <p>HelloWorld!</p>
         <Header />
         {/* <Main /> */}
       {/* </Wrapper> */}
