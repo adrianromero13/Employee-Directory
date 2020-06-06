@@ -1,7 +1,7 @@
 import React from "react";
 
 // import Main from "./components/Main";
-// import Wrapper from "./components/Wrapper";
+import Wrapper from '../Wrapper';
 import Header from '../Header';
 
 import '../../assets/App.css';
@@ -9,11 +9,10 @@ import '../../assets/App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Wrapper> */}
-      <p>HelloWorld!</p>
+      <Wrapper>
         <Header />
         {/* <Main /> */}
-      {/* </Wrapper> */}
+      </Wrapper>
     </div>
   );
 }
