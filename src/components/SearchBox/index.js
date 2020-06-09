@@ -9,15 +9,15 @@ function SearchBox({ handleSearchChange }) {
       <Form inverted>
         <Form.Field>
           <Input
-          label='Search'
-          placeholder='searchbox'
-          type='search'
-          // onChange={e => handleSearchChange(e)}
+            inverted
+            label='Search'
+            placeholder='searchbox'
+            type='search'
+            onChange={e => handleSearchChange(e)}
           />
         </Form.Field>
       </Form>
     </Segment>
-    
     // <div className="searchbox">
     //   <form className="form-inline">
     //     <input

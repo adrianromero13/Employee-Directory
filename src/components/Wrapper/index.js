@@ -1,12 +1,19 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 
-function Wrapper({ children }) {
+const Wrapper = ({ children }) => {
   return (
-      <Grid celled>
-          {children}
-      </Grid>
-  );
+    <Grid celled>
+      {children}
+    </Grid>
+  )
 }
+// function Wrapper({ children }) {
+//   return (
+//       <Grid celled>
+//           {children}
+//       </Grid>
+//   );
+// }
 
 export default Wrapper;
