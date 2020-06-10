@@ -38,6 +38,7 @@ The technologies used to create this terminal application are as follows:
 - React-semantic-ui 
 
 ## Usage 
+
 It has three simple feature to make searching through the database easier. 
 To search for a *specific person*, the search input field can be used. 
 The user interface will filter out any employee that does not fit the searched criteria, and only render those that do.
