@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-// import Table from './../../components/Table';
+import { Container } from 'semantic-ui-react';
+
 import Nav from '../../components/Nav';
 import Axios from '../../utils/Axios';
-import { Container } from 'semantic-ui-react';
 import EmployeeTable from '../../components/EmployeeTable';
 
-// styles
 
 export default class DataArea extends Component {
   state = {
@@ -57,7 +56,6 @@ export default class DataArea extends Component {
           return b[heading] - a[heading];
         }
       }
-
     }
     const sortedUsers = this.state.filteredUsers.sort(compareFnc);
     this.setState({ filteredUsers: sortedUsers });
@@ -80,7 +78,7 @@ export default class DataArea extends Component {
       this.setState({
         users: results.data.results,
         filteredUsers: results.data.results
-    });
+      });
       console.log(this.state);
     });
   }
@@ -89,13 +87,9 @@ export default class DataArea extends Component {
     console.log('state in render', this.state);
     return (
       <Container>
-        {/* {this.state.filteredUsers.length && <EmployeeTable users={this.state.filteredUsers} />} */}
         <Nav handleSearchChange={this.handleSearchChange} />
-        <p>Here lies a container</p>
         <Container>
-        
           <EmployeeTable
-            // useThis={this.state}
             headings={this.headings}
             users={this.state.filteredUsers}
             handleSort={this.handleSort}

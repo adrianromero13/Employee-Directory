@@ -1,0 +1,26 @@
+.selfHeader {
+    padding: 30px 0;
+    color: #000000;
+    background-color: rgb(108, 152, 77);
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid rgb(74, 46, 167);
+    margin-bottom: 10px;
+}
+.customContainer {
+    background: radial-gradient(teal, black);
+}
+
+.customText {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.customTable {
+    /* opacity: 0.5; */
+    background-color: rgba(62, 157, 124, 0.258);
+}
+
+.customBackground {
+    opacity: 0.85;
+}

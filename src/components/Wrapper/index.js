@@ -1,19 +1,12 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
+import './../../assets/body.css';
 
 const Wrapper = ({ children }) => {
   return (
-    <Grid celled>
+    <Container fluid className='customBody'>
       {children}
-    </Grid>
+    </Container>
   )
 }
-// function Wrapper({ children }) {
-//   return (
-//       <Grid celled>
-//           {children}
-//       </Grid>
-//   );
-// }
-
 export default Wrapper;

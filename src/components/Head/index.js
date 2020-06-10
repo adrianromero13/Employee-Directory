@@ -1,20 +1,25 @@
 import React from 'react';
 import { Grid, Header, Icon } from 'semantic-ui-react';
 
-// import SearchBox from './../SearchBox';
-// import './header.css';
+import './../../assets/custom.css';
 
 const Head = () => (
-
-  <Grid.Row className='selfHeader'>
-    <Header as='h2' icon>
-      <Icon name='settings' size='huge' />
-    Employee Directory
-    <Header.Subheader>
-      Search through the employees using.
-      Use the input box to narrow your search.
+  <Grid className='customContainer'>
+    <Grid.Column width={7} textAlign='right' fluid verticalAlign='middle'>
+      <Icon name='settings' rotated size='massive' />
+    </Grid.Column>
+    <Grid.Column width={8} textAlign='left' fluid verticalAlign='middle'>
+      <Header as='h1' icon>
+        Employee Directory
+          <Header.Subheader >
+          Search through the employees
           </Header.Subheader>
-        </Header>
-  </Grid.Row>)
+        <Header.Subheader>
+          Use the input box to narrow your search.
+          </Header.Subheader>
+      </Header>
+    </Grid.Column>
+  </Grid>
+)
 
 export default Head;

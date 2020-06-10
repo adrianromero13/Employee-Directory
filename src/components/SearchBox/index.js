@@ -1,34 +1,35 @@
 import React from "react";
-import { Form, Input, Segment } from 'semantic-ui-react';
+import { Form, Input, Container, Grid, Segment, Header } from 'semantic-ui-react';
 
 import "./searchBox.css";
 
 function SearchBox({ handleSearchChange }) {
   return (
-    <Segment>
-      <Form inverted>
-        <Form.Field>
-          <Input
-            inverted
-            label='Search'
-            placeholder='searchbox'
-            type='search'
-            onChange={e => handleSearchChange(e)}
-          />
-        </Form.Field>
-      </Form>
-    </Segment>
-    // <div className="searchbox">
-    //   <form className="form-inline">
-    //     <input
-    //       className="form-control"
-    //       type="search"
-    //       placeholder="Search"
-    //       aria-label="Search"
-    //       onChange={e => handleSearchChange(e)}
-    //     />
-    //   </form>
-    // </div>
+    <Container>
+      <Grid textAlign='center'>
+        <Grid.Column width={8}>
+          <Form >
+            <Form.Field>
+              <Input
+                inverted
+                label='Search'
+                type='search'
+                onChange={e => handleSearchChange(e)}
+                />
+            </Form.Field>
+          </Form>
+        </Grid.Column>
+      </Grid>
+      <Segment 
+        textAlign='center'
+        color='teal' 
+        piled 
+        tertiary
+        className='customText customBackground'
+        >
+        <Header as='h2' content='Employees'/>
+        </Segment>
+    </Container>
   );
 }
 export default SearchBox;
