@@ -62,7 +62,6 @@ export default class DataArea extends Component {
   }
 
   handleSearchChange = event => {
-    console.log(event.target.value);
     const filter = event.target.value;
     const filteredList = this.state.users.filter(item => {
       let values = Object.values(item)
@@ -79,12 +78,10 @@ export default class DataArea extends Component {
         users: results.data.results,
         filteredUsers: results.data.results
       });
-      console.log(this.state);
     });
   }
 
   render() {
-    console.log('state in render', this.state);
     return (
       <Container>
         <Nav handleSearchChange={this.handleSearchChange} />
