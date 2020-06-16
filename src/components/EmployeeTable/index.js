@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'semantic-ui-react';
+import { Table, Icon } from 'semantic-ui-react';
 
 import TableContent from './TableContent';
 import './../../assets/custom.css';
@@ -27,7 +27,7 @@ function EmployeeTable({ headings, users, handleSort }) {
                 }}
               >
                 {name}
-                <span className='pointer'></span>
+                <Icon name='sort'/>
               </Table.HeaderCell>
             );
           })}
